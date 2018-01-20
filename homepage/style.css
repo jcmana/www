@@ -1,0 +1,58 @@
+div#align_a
+{
+	display:table;
+	position:absolute;
+	height:98%;
+	width:98%;
+}
+
+div#align_b
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+div#content
+{
+	width:200px;
+
+	margin-left:auto;
+	margin-right:auto; 
+}
+
+a.bookmark
+{
+	display:block;
+	position:relative;
+
+	width:200px;
+	height:30px;
+}
+
+img.bookmark
+{
+	display:block;
+	position:absolute;
+
+	left:0px;
+	top:2px;
+
+	width:18px;
+	height:18px;
+}
+
+span.bookmark
+{
+	display:block;
+	position:absolute;
+
+	left:28px;
+	top:0px;
+	
+
+	font-size:18px;
+	font-family:Tahoma;
+	text-decoration:none;
+
+	color:#000000;
+}

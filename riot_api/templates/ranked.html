@@ -1,0 +1,35 @@
+<!DOCTYPE HTML">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Jcmana's ranked 5v5 match</title>
+<link rel="stylesheet" type="text/css" href="templates/ranked.css">
+</head>
+<body>
+
+<table class="blue">
+<?php foreach ($match["blue"] as $summoner): ?>
+<tr>
+<td class="name"><?php print $summoner["name"]; ?></td>
+<td class="league"><?php print $summoner["tier"]; ?> <?php print $summoner["rank"]; ?></td>
+<td class="wins"><?php print $summoner["wins"]; ?></td>
+<td class="losses"><?php print $summoner["losses"]; ?></td>
+</tr>
+<?php endforeach; ?>
+</table>
+
+<br>
+
+<table class="red">
+<?php foreach ($match["red"] as $summoner): ?>
+<tr>
+<td class="name"><?php print $summoner["name"]; ?></td>
+<td class="league"><?php print $summoner["tier"]; ?> <?php print $summoner["rank"]; ?></td>
+<td class="wins"><?php print $summoner["wins"]; ?></td>
+<td class="losses"><?php print $summoner["losses"]; ?></td>
+</tr>
+<?php endforeach; ?>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body
+{
+	font-family:Tahoma;
+}
+
+table
+{
+	width:450px;
+	margin:auto;
+
+	border-collapse:collapse;
+	border-radius:10px;
+}
+
+table tr
+{
+	height:25px;
+}
+
+table td
+{
+	text-align:center;
+}
+
+table.blue
+{
+	border-left:3px solid blue;
+}
+table.red
+{
+	border-left:3px solid red;
+}
+
+td.wins
+{
+	color:green;
+}
+td.losses
+{
+	color:red;
+}
