@@ -1,32 +1,62 @@
 [
-	{
-		"name": "google.cz",
-		"href": "https://www.google.cz",
-		"icon": "google.com.ico"
-	},
-	{
-		"name": "mail.google.com",
-		"href": "https://mail.google.com",
-		"icon": "mail.google.com.ico"
-	},
-	{
-		"name": "facebook.com",
-		"href": "https://www.facebook.com",
-		"icon": "facbook.com.png"
-	},
-	{
-		"name": "quora.com",
-		"href": "https://www.quora.com",
-		"icon": "quora.com.ico"
-	},
-	{
-		"name": "9gag.com",
-		"href": "https://9gag.com",
-		"icon": "9gag.com.ico"
-	},
-	{
-		"name": "twitch.tv",
-		"href": "https://www.twitch.tv/directory/following",
-		"icon": "twitch.tv.ico"
-	}
+	[
+		{
+			"name": "google.cz",
+			"href": "https://www.google.cz",
+			"icon": "google.com.ico"
+		},
+		{
+			"name": "mail.google.com",
+			"href": "https://mail.google.com",
+			"icon": "mail.google.com.ico"
+		},
+		{
+			"name": "maps.google.com",
+			"href": "https://maps.google.com",
+			"icon": "google.com.ico"
+		}
+	],
+	[
+		{
+			"name": "facebook.com",
+			"href": "https://www.facebook.com",
+			"icon": "facbook.com.png"
+		}
+	],
+	[
+		{
+			"name": "quora.com",
+			"href": "https://www.quora.com",
+			"icon": "quora.com.ico"
+		}
+	],
+	[
+		{
+			"name": "9gag.com",
+			"href": "https://9gag.com",
+			"icon": "9gag.com.ico"
+		},
+		{
+			"name": "rouming.cz",
+			"href": "http://rouming.cz",
+			"icon": ""
+		},
+		{
+			"name": "xkcd.com",
+			"href": "https://xkcd.com/",
+			"icon": ""
+		}
+	],
+	[
+		{
+			"name": "twitch.tv",
+			"href": "https://www.twitch.tv/",
+			"icon": "twitch.tv.ico"
+		},
+		{
+			"name": "following",
+			"href": "https://www.twitch.tv/directory/following",
+			"icon": "twitch.tv.ico"
+		}
+	]
 ]

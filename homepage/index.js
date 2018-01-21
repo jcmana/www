@@ -13,22 +13,48 @@ function BookmarkHolder(element, source)
 	// Loads bookmars definition from JSON file
 	self.__from_json = function(json)
 	{
+		// Initialize Bookmar two-dimensional array
+		self.__bookmark_list = [];
+
 		// Create list of Bookmark hodlder objects
-		for (var i in self.__bookmark_json)
+		for (var row in self.__bookmark_json)
 		{
-			var bookmark_json = self.__bookmark_json[i];
+			// Initialize row array
+			self.__bookmark_list[row] = [];
 
-			// Create Bookmark object
-			var bookmark = new Bookmark(bookmark_json.name, bookmark_json.href, bookmark_json.icon);
-
-			// Store new Bookmark object
-			self.__bookmark_list.push(bookmark);
+			for (var col in self.__bookmark_json[row])
+			{
+				var bookmark_json = self.__bookmark_json[row][col];
+	
+				// Create Bookmark object
+				var bookmark = new Bookmark(bookmark_json.name, bookmark_json.href, bookmark_json.icon);
+	
+				// Store new Bookmark object
+				self.__bookmark_list[row][col] = bookmark;
+			}
 		}
 
 		// Create all Bookmark elements
-		for (var i in self.__bookmark_list)
+		for (var row in self.__bookmark_list)
 		{
-			self.__bookmark_list[i].create_element(self.__element);
+			// Prepare table row for list of Bookmarks
+			var bookmark_table_row = $("<tr></tr>");
+			var bookmark_table_col = null;
+
+			for (col in self.__bookmark_list[row])
+			{
+				// Prepare table column for Bookmark element
+				bookmark_table_col = $("<td></td>");
+
+				// Create Bookmark element
+				self.__bookmark_list[row][col].create_element(bookmark_table_col);
+
+				// Append table col to the row
+				bookmark_table_row.append(bookmark_table_col);
+			}
+
+			// Append table row to the table
+			self.__element.append(bookmark_table_row);
 		}
 	}
 

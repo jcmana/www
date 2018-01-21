@@ -1,20 +1,8 @@
-div#align_a
-{
-	display:table;
-	position:absolute;
-	height:98%;
-	width:98%;
-}
-
-div#align_b
-{
-	display:table-cell;
-	vertical-align:middle;
-}
-
 div#content
 {
-	width:200px;
+	position:relative;
+
+	width:800px;
 
 	margin-left:auto;
 	margin-right:auto; 
