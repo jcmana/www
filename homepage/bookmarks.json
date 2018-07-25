@@ -44,10 +44,15 @@
 		{
 			"name": "xkcd.com",
 			"href": "https://xkcd.com/",
-			"icon": ""
+			"icon": "xkcd.com.ico"
 		}
 	],
 	[
+		{
+			"name": "youtube.com",
+			"href": "https://www.youtube.com/",
+			"icon": "youtube.com.png"
+		},
 		{
 			"name": "twitch.tv",
 			"href": "https://www.twitch.tv/",
