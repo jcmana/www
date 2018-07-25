@@ -1,0 +1,42 @@
+#reset
+{
+	position:absolute;
+}
+
+#content
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-right:-50%;
+	transform:translate(-50%, -50%);
+}
+
+#toggleHintA
+{
+	position:absolute;
+	top:40px;
+	left:17px;
+
+	font-size:26px;
+	font-family:Tahoma;
+
+	cursor:pointer;
+}
+
+#toggleHintB
+{
+	position:absolute;
+	top:75px;
+	left:17px;
+
+	font-size:26px;
+	font-family:Tahoma;
+
+	cursor:pointer;
+}
+
+.deactivated
+{
+	color:#CCCCCC;
+}

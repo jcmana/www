@@ -1,0 +1,95 @@
+#sudoku
+{
+	border-collapse:collapse;
+}
+
+#sudoku td
+{
+	height:88px;
+	width:84px;
+
+	border:1px solid black;
+}
+
+#sudoku td.top
+{
+	border-top:2px solid black;
+}
+#sudoku td.bottom
+{
+	border-bottom:2px solid black;
+}
+#sudoku td.left 
+{
+	border-left:2px solid black;
+}
+#sudoku td.right
+{
+	border-right:2px solid black;
+}
+
+#sudoku input.number
+{
+	position:relative;
+	height:44px;
+	width:86px;
+
+	text-align:center;
+	font-size:32px;
+	font-family:Tahoma;
+
+	border:none;
+}
+#sudoku input.number:focus
+{
+	outline:none !important;
+	box-shadow:none;
+}
+
+#sudoku input.hint_a
+{
+	position:relative;
+	height:20px;
+	width:86px;
+
+	padding-right:4px;
+
+	text-align:right;
+	font-size:12px;
+	font-family:Tahoma;
+
+	border:none;
+}
+#sudoku input.hint_a:focus
+{
+	outline:none !important;
+	box-shadow:none;
+}
+
+#sudoku input.hint_b
+{
+	position:relative;
+	height:20px;
+	width:86px;
+
+	padding-left:4px;	
+
+	text-align:left;
+	font-size:12px;
+	font-family:Tahoma;
+
+	border:none;
+}
+#sudoku input.hint_b:focus
+{
+	outline:none !important;
+	box-shadow:none;
+}
+
+#sudoku input
+{
+	position:relative;
+	height:0px;
+	width:0px;
+	border:none;
+}

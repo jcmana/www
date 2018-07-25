@@ -1,0 +1,161 @@
+<!DOCTYPE HMTL>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="res/styles/content.css">
+<link rel="stylesheet" type="text/css" href="res/styles/reset.css">
+<link rel="stylesheet" type="text/css" href="res/styles/sudoku.css">
+
+<script src="res/scripts/jquery.js"></script>
+<script src="res/scripts/app.js"></script>
+</head>
+
+<body>
+<div id="reset"><img id="reset" src="res/images/reset.png"></div>
+<div id="toggleHintA">A</div>
+<div id="toggleHintB">B</div>
+
+
+<div id="content">
+
+<table id="sudoku">
+
+
+<!-- BLOCK ROW #1 -->
+<tr>
+<td id="field_00" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_01" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_02" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_03" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_04" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_05" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_06" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_07" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_08" class="top right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+<tr>
+<td id="field_10" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_11" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_12" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_13" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_14" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_15" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_16" class=" left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_17" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_18" class="right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+<tr>
+<td id="field_20" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_21" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_22" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_23" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_24" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_25" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_26" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_27" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_28" class="right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+
+<!-- BLOCK ROW #2 -->
+
+<tr>
+<td id="field_30" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_31" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_32" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+                            
+<td id="field_33" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_34" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_35" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+                            
+<td id="field_36" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_37" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_38" class="top right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+<tr>
+<td id="field_40" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_41" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_42" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_43" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_44" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_45" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_46" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_47" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_48" class="right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+<tr>
+<td id="field_50" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_51" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_52" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_53" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_54" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_55" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_56" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_57" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_58" class="right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+
+<!-- BLOCK ROW #3 -->
+<tr>
+<td id="field_60" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_61" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_62" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+                           
+<td id="field_63" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_64" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_65" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+                           
+<td id="field_66" class="top left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_67" class="top"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_68" class="top right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+<tr>
+<td id="field_70" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_71" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_72" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_73" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_74" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_75" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_76" class="left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_77" class=""><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_78" class="right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+<tr>
+<td id="field_80" class="bottom left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_81" class="bottom"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_82" class="bottom"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_83" class="bottom left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_84" class="bottom"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_85" class="bottom"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+
+<td id="field_86" class="bottom left"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_87" class="bottom"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+<td id="field_88" class="bottom right"><input class="hint_a"><input class="number"><input class="hint_b"></td>
+</tr>
+
+</table>
+
+</div>
+</body>
+
+</html>
